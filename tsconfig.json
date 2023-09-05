@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "strict": true,
+        "strictNullChecks": false,
+        "target": "ESNext",
+        "sourceMap": true,
+        "outDir": "./bin",
+      },
+      "include": ["src/**/*"],
+      "exclude": []
+}
