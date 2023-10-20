@@ -94,10 +94,10 @@ export class ChessRules extends Judge {
             if((from.raw.row === 2 || from.raw.row === 7) && (Math.abs(to.raw.row - from.raw.row) === 2)){
                 let enpassant1 = this.state.positions.find(p => p.raw.row === to.raw.row && p.raw.col === to.raw.col-1);
                 let enpassant2 = this.state.positions.find(p => p.raw.row === to.raw.row && p.raw.col === to.raw.col+1);
-                if(enpassant1.piece === Piece.P){
+                if(enpassant1 && enpassant1.piece === Piece.P){
                     this.state.enPassant = getNotation(from.raw.row === 2 ? to.raw.row-1 : to.raw.row+1,to.raw.col);
                 }
-                if(enpassant2.piece === Piece.P){
+                if(enpassant2 && enpassant2.piece === Piece.P){
                     this.state.enPassant = getNotation(from.raw.row === 2 ? to.raw.row-1 : to.raw.row+1,to.raw.col);
                 }
             }

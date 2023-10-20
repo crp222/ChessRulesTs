@@ -184,7 +184,7 @@ function pawn(from : Position,state : State,moves : Array<Position>){
     if(!pos.piece){
         moves.push(pos);
     }
-    if(from.raw.row === startrow){
+    if(from.raw.row === startrow && !pos.piece){
         pos = state.positions.find(p => p.raw.row === from.raw.row + dir*2 && p.raw.col === from.raw.col);
         if(!pos.piece){
             moves.push(pos);

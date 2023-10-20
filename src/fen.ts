@@ -1,5 +1,5 @@
-import { State } from "./State";
-import { Color, Position, getNotation, getPiece } from "./Utils";
+import { State } from "./State.js";
+import { Color, Position, getNotation, getPiece } from "./Utils.js";
 
 function parsePieces(str : string,state : State) {
     state.positions = new Array<Position>;

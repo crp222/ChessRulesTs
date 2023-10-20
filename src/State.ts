@@ -1,4 +1,4 @@
-import { Color, Piece, Position } from "./Utils";
+import { Color, Piece, Position } from "./Utils.js";
 
 export interface State {
     fen : string,

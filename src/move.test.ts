@@ -1,5 +1,5 @@
-import { ChessRules } from "./ChessRules";
-import { pieceMovesWithCheck } from "./move";
+import { ChessRules } from "./ChessRules.js";
+import { pieceMovesWithCheck } from "./move.js";
 
 
 export function testMove(rules : ChessRules,fen : string,from : string,rightMoves : string,wrongMoves : string){ 

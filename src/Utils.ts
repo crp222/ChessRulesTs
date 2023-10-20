@@ -1,5 +1,5 @@
-import { State } from "./State";
-import { isCheck } from "./move";
+import { State } from "./State.js";
+import { isCheck } from "./move.js";
 
 export enum Piece {
     P = "p",
